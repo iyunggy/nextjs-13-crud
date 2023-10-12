@@ -23,7 +23,7 @@ export default function AddTopic() {
         },
         body: JSON.stringify({ title, description }),
       });
-      console.log('ress', res);
+      // console.log('ress', res);
       if (res.ok) {
         router.push("/");
       } else {
