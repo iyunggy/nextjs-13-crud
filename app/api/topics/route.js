@@ -10,6 +10,7 @@ export async function POST(request) {
 }
 
 export async function GET() {
+  console.log('masuk get')
   await connectMongoDB();
   const topics = await Topic.find();
   return NextResponse.json({ topics });
